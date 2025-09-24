@@ -1,22 +1,14 @@
 {
-  "name": "youtube-scraper",
+  "name": "yt-scrapper-api",
   "version": "1.0.0",
-  "description": "Free YouTube Music Scraper - No API Key Required",
-  "main": "api/search.js",
+  "description": "YouTube audio downloader API via scraping (no API key required)",
+  "main": "index.js",
   "scripts": {
-    "dev": "vercel dev",
-    "start": "node api/search.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "express": "^4.18.2",
-    "cors": "^2.8.5",
-    "cheerio": "^1.0.0-rc.12",
-    "axios": "^1.6.0",
-    "ytdl-core": "^4.11.5",
-    "puppeteer-core": "^21.0.0",
-    "chrome-aws-lambda": "^10.1.0"
-  },
-  "engines": {
-    "node": ">=18.0.0"
+    "yt-dlp-exec": "^1.3.2",
+    "tmp": "^0.2.1"
   }
 }
